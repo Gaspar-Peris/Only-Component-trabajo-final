@@ -1,0 +1,362 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(25, 25, 58); /* mismo tono que el resto del fondo */
+}
+
+.footer { 
+  color: rgb(116, 116, 116);
+  background-color: rgb(17, 17, 17);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 100px;
+}
+
+.barra { 
+  background-color: rgb(211, 211, 223); }
+
+.carousel-control-prev,
+.carousel-control-next {
+  pointer-events: none; 
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  pointer-events: auto; 
+  width: 40px;
+  height: 40px;
+  background-size: 100%;
+}
+
+.sec-1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.sec-1 img,
+.item img {
+  width: 100%;
+  display: block;
+  padding: 3px;
+  border-radius: 10px;
+  height: auto;
+}
+
+.item {
+  flex: 1 1 50%;
+  position: relative;
+}
+
+.item button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-weight: 500;
+}
+
+.item:hover button {
+  opacity: 1;
+}
+
+.footer img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.footer img:hover {
+  transform: scale(1.2);
+}
+
+.seccion-perfil {
+  background: linear-gradient(135deg, rgb(25, 25, 58), rgb(15, 15, 40));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 40px;
+  flex-wrap: wrap;
+  color: white;
+  min-height: 100vh; 
+  overflow: hidden;
+}
+
+.imagen-perfil {
+  max-width: 40%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+}
+
+.contenedor-opciones {
+  display: grid;
+  grid-template-columns: repeat(2, 220px);
+  gap: 25px;
+}
+
+.cupones {
+  grid-column: 1 / span 2;
+  justify-self: center;
+}
+
+.historial { 
+  grid-column: 1; }
+
+.personales { 
+  grid-column: 2; }
+
+.card-opcion,
+.card-info {
+  background-color: rgba(50, 50, 100, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 20px;
+  text-align: center;
+}
+
+.card-opcion h2,
+.card-info h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.card-opcion p,
+.card-info p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.card-opcion:hover,
+.card-info:hover {
+  transform: translateY(-6px) scale(1.05);
+  background-color: rgb(70, 70, 130);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card-info { 
+  width: 250px; border-radius: 12px; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: rgba(10, 10, 30, 0.9);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.seccion-info,
+.seccion-soporte {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  min-height: 100vh; 
+  overflow: hidden;
+}
+
+.seccion-info h2,
+.seccion-soporte h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #00bfff;
+}
+
+.seccion-info p,
+.seccion-soporte p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.cards-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.form-soporte {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto 30px auto;
+}
+
+.form-soporte input,
+.form-soporte textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.form-soporte button {
+  padding: 12px;
+  background-color: rgb(70,70,130);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-soporte button:hover {
+  background-color: rgb(100,100,200);
+}
+
+.faq {
+  background-color: rgba(50,50,100,0.9);
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.faq h3 {
+  margin-bottom: 15px;
+  color: #00bfff;
+}
+
+.faq ul {
+  list-style: none;
+  text-align: left;
+}
+
+.faq li {
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.seccion-productos {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+   min-height: 100vh; 
+  overflow: hidden;
+}
+
+.seccion-productos h2 {
+  font-size: 2rem;
+  color: #00bfff;
+  margin-bottom: 10px;
+}
+
+.seccion-productos p {
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.buscador {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.buscador input {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  width: 250px;
+  font-size: 1rem;
+}
+
+.buscador button {
+  padding: 10px 15px;
+  background-color: rgb(70, 70, 130);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buscador button:hover {
+  background-color: rgb(100, 100, 200);
+}
+
+.grid-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card-producto {
+  background-color: rgba(50, 50, 100, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.card-producto:hover {
+  transform: translateY(-6px) scale(1.05);
+  background-color: rgb(70, 70, 130);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card-producto img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card-producto h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card-producto p {
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.card-producto button {
+  padding: 10px 15px;
+  background-color: rgb(100, 100, 200);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-producto button:hover {
+  background-color: rgb(130, 130, 250);
+}
