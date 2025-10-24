@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Gestiona tu perfil, pedidos y datos personales de manera segura. Controla tus compras y mantente al día con tus productos gamers y de informática favoritos.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
     crossorigin="anonymous">
     <link rel="stylesheet" href="/css/styles.css" />
@@ -10,7 +11,7 @@
   </head>
 
   <body>
-
+ 
       <nav class="navbar navbar-expand-lg barra">
   <div class="container-fluid">
     <img src="/assets/logoL.png" height="65px">
@@ -21,42 +22,42 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/pages/pagina1.html">Productos</a>
+          <a class="nav-link active" aria-current="page" href="/OnlyComponent/productos.html">Productos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/pages/pagina2.html">Perfil</a>
+          <a class="nav-link" href="#">Perfil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Informacion</a>
+          <a class="nav-link" href="/OnlyComponent/informacion.html">Informacion</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/pages/pagina4.html">Soporte</a>
+          <a class="nav-link" href="/OnlyComponent/soporte.html">Soporte</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
       
-  <section class="seccion-info">
-    <h2>Sobre OnlyComponent</h2>
-    <p>Somos tu tienda especializada en periféricos gamer y computación. Encontrá teclados, mice, auriculares, monitores y más con los mejores precios y novedades del mercado.</p>
+<div class="seccion-perfil">
+  <img src="/assets/logo.png" alt="Perfil" class="imagen-perfil">
 
-    <div class="cards-info">
-      <div class="card-info">
-        <h3>Productos de Alta Calidad</h3>
-        <p>Seleccionamos solo lo mejor para gamers y entusiastas de la informática.</p>
-      </div>
-      <div class="card-info">
-        <h3>Envíos Rápidos</h3>
-        <p>Recibí tus productos en tiempo récord en todo el país.</p>
-      </div>
-      <div class="card-info">
-        <h3>Promociones Exclusivas</h3>
-        <p>Descuentos especiales para gamers y clientes frecuentes.</p>
-      </div>
+  <div class="contenedor-opciones">
+    <div class="card-opcion cupones">
+      <h2>Cupones</h2>
+      <p>Consultá tus cupones y descuentos disponibles.</p>
     </div>
-  </section>
 
+    <div class="card-opcion historial">
+      <h2>Historial de compras</h2>
+      <p>Revisá tus pedidos anteriores y su estado.</p>
+    </div>
+
+    <div class="card-opcion personales">
+      <h2>Datos personales</h2>
+      <p>Actualizá tu información y preferencias.</p>
+    </div>
+  </div>
+</div>
 
 
 <footer class="footer">
@@ -73,7 +74,7 @@
     <img src="/assets/youtube.png" alt="YouTube">
   </a>
 </footer>
-
+  
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
     crossorigin="anonymous"></script>
   </body>
