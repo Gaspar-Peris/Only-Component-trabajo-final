@@ -1,0 +1,25 @@
+// Colores
+$color-fondo-principal: rgb(25, 25, 58);
+$color-fondo-secundario: rgb(15, 15, 40);
+$color-acento: #00bfff;
+$color-texto: #ccc;
+$color-texto-secundario: rgb(116, 116, 116);
+$color-card: rgba(50, 50, 100, 0.9);
+$color-card-hover: rgb(70, 70, 130);
+$color-boton: rgb(70, 70, 130);
+$color-boton-hover: rgb(100, 100, 200);
+$color-boton-intenso: rgb(100, 100, 200);
+$color-boton-intenso-hover: rgb(130, 130, 250);
+$color-header: rgba(10, 10, 30, 0.9);
+$color-footer: rgb(17, 17, 17);
+$color-barra: rgb(211, 211, 223);
+
+// Bordes y sombras
+$radius-base: 8px;
+$radius-card: 12px;
+$radius-grande: 15px;
+$sombra-card: 0 5px 15px rgba(0, 0, 0, 0.4);
+$sombra-hover: 0 8px 20px rgba(0, 0, 0, 0.5);
+
+// Transiciones
+$transicion-base: all 0.3s ease;
